@@ -80,11 +80,10 @@ async function clickEventHandler(){
             await playVideo(videoTime, doubleSpeed, videoFile, videoBox);
             await timeSleep(fib2-videoTime);
         }
-        // changed from fib sequence to golden ratio sequence
-        // holder = fib2;
-        // fib2 = fib1 + fib2;
-        // fib1 = holder;
-        fib2 = fib2 * 1.61803398875
+        // fib sequence
+        holder = fib2;
+        fib2 = fib1 + fib2;
+        fib1 = holder;
     }
     
     
