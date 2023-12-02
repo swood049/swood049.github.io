@@ -80,7 +80,6 @@ async function clickEventHandler(){
             await playVideo(videoTime, doubleSpeed, videoFile, videoBox);
             await timeSleep(fib2-videoTime);
         }
-        // fib sequence
         holder = fib2;
         fib2 = fib1 + fib2;
         fib1 = holder;
