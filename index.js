@@ -20,7 +20,7 @@ console.log(fileInputField.onchange);
 function buildLearningTrain(fileName, videoBox){
     const train = document.createElement("div");
     const label = document.createElement("span");
-    label.innerText = `train for ${fileName}`;
+    label.innerText = `next repition is in ${fileName}`;
     train.classList.add("train");
     train.innerText = "0 seconds";
     videoBox.append(label)
