@@ -5,3 +5,8 @@
   height: auto; /* Or any height you want */
   border: 1px solid black; /* Just to show the box */
 }
+.train{
+  padding: 2px;
+  border-color:black;
+  border-width: 1px;
+}
