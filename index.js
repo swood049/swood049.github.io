@@ -20,16 +20,16 @@ console.log(fileInputField.onchange);
 function buildLearningTrain(fileName, videoBox){
     const train = document.createElement("div");
     const label = document.createElement("p");
-    label.innerText = `next repition is in ${fileName}`;
+    label.innerText = `next repition in ${fileName} is `;
     train.classList.add("train");
-    train.innerText = "0 seconds";
+    train.innerText = " 0 seconds ";
     videoBox.append(label)
     videoBox.appendChild(train);
 
     return train;
 }
 function changeTrainSeconds(train, newSeconds){
-    train.innerText = `${newSeconds} seconds`;
+    train.innerText = ` ${newSeconds} seconds `;
 }
 function countdownTrain(train, fib2){
     let time = fib2;
@@ -40,7 +40,7 @@ function countdownTrain(train, fib2){
 }
 function setCounter(trainNum, counterNum){
     const counterSpan = document.querySelector(`#train${trainNum}`);
-    counterSpan.innerText = `${counterNum} number of reps`;
+    counterSpan.innerText = ` ${counterNum} number of reps `;
 }
 
 async function clickEventHandler(){
